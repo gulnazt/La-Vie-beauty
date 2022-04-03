@@ -1,0 +1,119 @@
+body {
+  background-color:white;
+  margin: 0;
+}
+h1 {
+  font-family: "Lucida Handwriting", cursive;
+  font-size: 60px;
+  margin-left: 550px;
+  margin-bottom: 0;
+}
+p {
+  font-size: 20px;
+  text-align:center;
+}
+
+.head {
+  background-color: #B7CADB;
+  margin-bottom: 20px;
+  position: static;
+  text-align: center;
+}
+.head p{
+  font-size: 30px;
+  margin-left: 625px;
+  margin-top: 0;
+  margin-bottom: 10px;
+}
+h3 {
+  word-spacing: 80px;
+}
+.div1 {
+  width: 300px;
+height: 900px;
+border-right-width: 1px;
+}
+
+i {
+  font-size: 30px;
+  display: flex;
+  justify-content: flex-end;
+}
+.head ul {
+  display: flex;
+  justify-content: flex-end;
+}
+.head ul li{
+list-style: none;
+margin-right: 40px;
+margin-top: 10px;
+}
+div.gallery {
+  border: 1px solid #ccc;
+}
+
+div.gallery:hover {
+  border: 1px solid #777;
+}
+
+div.gallery img {
+  width: 100%;
+  height: auto;
+}
+
+.desc {
+  padding: 15px;
+  text-align: center;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.responsive {
+  padding: 0 6px;
+  float: left;
+  width: 24.99999%;
+}
+
+@media only screen and (max-width: 700px) {
+  .responsive {
+    width: 49.99999%;
+    margin: 6px 0;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .responsive {
+    width: 100%;
+  }
+}
+
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.div1 {
+float: left;
+height: 0px;
+}
+#stages {
+  background-color: #EFDAD7;
+   font-family: "Garamond", serif;
+  font-size: 20px;
+
+}
+ol {
+    display: table;
+    margin: 0 auto;
+}
+h2 {
+  text-align: center;
+}
+.end {
+background-color: #B7CADB;
+font-size: 30px;
+margin-bottom: 0;
+text-align: center;
+}
