@@ -1,119 +1,199 @@
 body {
-  background-color:white;
-  margin: 0;
+  font-family: "Modern Serif";
+  overflow-x: hidden;
+  margin: 0px;
+  padding: 0px;
 }
-h1 {
-  font-family: "Lucida Handwriting", cursive;
-  font-size: 60px;
-  margin-left: 550px;
-  margin-bottom: 0;
+.container-fluid {
+text-align:center;
+    background-color: #B7CADB;
+    font-family: "Lucida Handwriting", cursive;
+      font-size: 25px;
 }
-p {
+.icons {
   font-size: 20px;
-  text-align:center;
+  text-align: right;
 }
 
-.head {
-  background-color: #B7CADB;
-  margin-bottom: 20px;
-  position: static;
+#items {
+  text-align: center;
+}
+.card {
+  text-align: center;
+  display: inline-block;
+  background-color: inherit;
+  border: solid 15px;
+  border-width: thin;
+  width: 300px;
+  margin: 30px;
+}
+
+.card-text {
   text-align: center;
 }
-.head p{
-  font-size: 30px;
-  margin-left: 625px;
-  margin-top: 0;
-  margin-bottom: 10px;
+.container-responsive {
+  text-align: left;
+  background-color: #B7CAD8;
+  padding: 20px;
 }
-h3 {
-  word-spacing: 80px;
+.footer {
+  background-color: #B7CAD8;
+  padding: 20px;
 }
-.div1 {
-  width: 300px;
-height: 900px;
-border-right-width: 1px;
-}
-
 i {
   font-size: 30px;
-  display: flex;
-  justify-content: flex-end;
 }
-.head ul {
-  display: flex;
-  justify-content: flex-end;
-}
-.head ul li{
-list-style: none;
-margin-right: 40px;
-margin-top: 10px;
-}
-div.gallery {
-  border: 1px solid #ccc;
-}
-
-div.gallery:hover {
-  border: 1px solid #777;
-}
-
-div.gallery img {
-  width: 100%;
-  height: auto;
-}
-
-.desc {
-  padding: 15px;
+#items {
   text-align: center;
 }
+
 
 * {
   box-sizing: border-box;
 }
 
-.responsive {
-  padding: 0 6px;
-  float: left;
-  width: 24.99999%;
-}
-
-@media only screen and (max-width: 700px) {
-  .responsive {
-    width: 49.99999%;
-    margin: 6px 0;
-  }
-}
-
-@media only screen and (max-width: 500px) {
-  .responsive {
-    width: 100%;
-  }
-}
-
-.clearfix:after {
-  content: "";
-  display: table;
-  clear: both;
-}
-.div1 {
-float: left;
-height: 0px;
-}
-#stages {
-  background-color: #EFDAD7;
-   font-family: "Garamond", serif;
+.openBtn {
+  background: #f1f1f1;
+  border: none;
+  padding: 10px 15px;
   font-size: 20px;
-
+  cursor: pointer;
 }
-ol {
-    display: table;
-    margin: 0 auto;
+
+.openBtn:hover {
+  background: #bbb;
+}
+
+.overlay {
+  height: 100%;
+  width: 100%;
+  display: none;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: rgb(0,0,0);
+  background-color: rgba(0,0,0, 0.9);
+}
+
+.overlay-content {
+  position: relative;
+  top: 46%;
+  width: 80%;
+  text-align: center;
+  margin-top: 30px;
+  margin: auto;
+}
+
+.overlay .closebtn {
+  position: absolute;
+  top: 20px;
+  right: 45px;
+  font-size: 60px;
+  cursor: pointer;
+  color: white;
+}
+
+.overlay .closebtn:hover {
+  color: #ccc;
+}
+
+.overlay input[type=text] {
+  padding: 15px;
+  font-size: 17px;
+  border: none;
+  float: left;
+  width: 80%;
+  background: white;
+}
+
+.overlay input[type=text]:hover {
+  background: #f1f1f1;
+}
+
+.overlay button {
+  float: left;
+  width: 20%;
+  padding: 15px;
+  background: #ddd;
+  font-size: 17px;
+  border: none;
+  cursor: pointer;
+}
+
+.overlay button:hover {
+  background: #bbb;
 }
 h2 {
   text-align: center;
 }
-.end {
-background-color: #B7CADB;
-font-size: 30px;
-margin-bottom: 0;
-text-align: center;
+.myOverlay{
+  display:flex;
+  justify-content: flex-end;
 }
+.fa {
+
+  padding: 10px;
+  font-size: 20px;
+  width: 50px;
+  text-align: center;
+  text-decoration: none;
+  margin: 5px 2px;
+}
+
+.fa:hover {
+    opacity: 0.7;
+}
+
+.fa-facebook {
+  background: #99C9E0;
+  color: white;
+}
+
+.fa-twitter {
+  background: #99C9E0;
+  color: white;
+}
+
+.fa-google {
+  background: #99C9E0;
+  color: white;
+}
+
+.fa-instagram {
+  background: #99C9E0;
+  color: white;
+}
+.dropbtn {
+  background-color: #F0F0F0;
+  color: black;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+.dropdown-content a:hover {background-color: #ddd;}
+
+.dropdown:hover .dropdown-content {display: block;}
+
+.dropdown:hover .dropbtn {background-color:#f1f1f1 ;}

@@ -1,140 +1,270 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
-<script src="https://kit.fontawesome.com/c1fd955ab6.js" crossorigin="anonymous"></script>
   <title>La Vie Beauty</title>
-  <link rel="stylesheet" href="css/styles.css">
+  <!-- Font Awesome -->
+  <script src="https://kit.fontawesome.com/c1fd955ab6.js" crossorigin="anonymous"></script>
+  <!-- Stylesheets -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
+  <link rel="stylesheet" href="styles.css">
+  <!-- Bootstrap Scripts -->
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.min.js" integrity="sha384-VHvPCCyXqtD5DqJeNxl2dtTyhF78xXNXdkwX1CZeRusQfRKp+tA7hAShOK/B/fQ2" crossorigin="anonymous"></script>
+  <!-- Favicon -->
   <link rel="icon" href="lavie.png">
-</head>
+
 <body>
-  <header>
+  <!-- Header -->
+  <div class="container-fluid">
 
-  <div class="head">
-    <table>
-      <tr>
-        <td width="100"><img src="lavie.png" alt="la vie logo" width="130" height="130"></td>
-        <td>
-          <h1>La Vie</h1>
-          <p ><em>beauty</em></p>
+    <br>
+    <h1>La Vie</h1>
+    <p><em>beauty</em></p>
 
-        </td>
-      </tr>
-    </table>
-    <ul>
-
-
-    <li>  <i class="fa-solid fa-cart-shopping"></i></li>
-      <li> <i class="fa-solid fa-heart-circle-plus"></i></li>
-      <li>  <i class="fa-solid fa-user"></i></li></li>
-      <li>  <i class="fa-solid fa-magnifying-glass"></i></li>
-        </ul>
+    <div class="icons">
+      <i class="fa-solid fa-cart-shopping"></i>
+      <i class="fa-solid fa-heart-circle-plus"></i>
+      <i class="fa-solid fa-user"></i>
+      <i class="fa-solid fa-magnifying-glass"></i>
+    </div>
   </div>
-</header>
-<nav>
-<hr>
-<h3><strong>
-  КАТАЛОГ
-  НОВИНКИ
-  ПОДАРОЧНЫЕ СЕРТИФИКАТЫ
-  АКЦИИ
-  SALE
-ПОЛЕЗНАЯ ИНФОРМАЦИЯ
- </strong> </h3>
-<hr>
-</nav>
-<div class="div1">
-<br>
-<form action="/action_page.php">
-  <label for="fname">Логин:</label><br>
-  <input type="text" id="fname" name="fname" value=""><br>
-  <label for="lname">Пароль:</label><br>
-  <input type="text" id="lname" name="lname" value="">
-  <h5><a href="">Регистрация</a></h5>
-  <input type="submit" value="Войти">
-</form>
-</div>
-<div id="stages">
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <ul class="navbar-nav mx-auto">
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+        <li class="nav-item">
+          <a class="nav-link" href="">КАТАЛОГ</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">НОВИНКИ</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#"> СЕРТИФИКАТЫ</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link">SALE</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link">FAQ</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link">КЛИЕНТАМ</a>
+        </li>
+    </ul>
+    </div>
+  </nav>
 
-<h2>Этапы ухода</h2>
-<ol>
-  <li>Очищение</li>
-  <li>Тонизирование</li>
-  <li>Увлажнение и питание</li>
-  <li>Защита от солнца</li>
-</ol>
-</div>
-<br>
+  <!-- Carousel -->
+  <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+    <ol class="carousel-indicators">
+      <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+      <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+      <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+    </ol>
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="images/cp1.jpg" class="d-block w-100" alt="...">
+      </div>
+      <div class="carousel-item">
+        <img src="images/drjb.png" class="d-block w-100" alt="...">
+      </div>
+      <div class="carousel-item">
+        <img src="images/elemis1.jpeg" class="d-block w-100" alt="...">
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-target="#carouselExampleIndicators" data-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="sr-only">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-target="#carouselExampleIndicators" data-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="sr-only">Next</span>
+    </button>
+  </div>
+<!-- Поиск-->
+  <div id="myOverlay" class="overlay">
+    <span class="closebtn" onclick="closeSearch()" title="Close Overlay">×</span>
+    <div class="overlay-content">
+      <form action="/action_page.php">
+        <input type="text" placeholder="Search.." name="search">
+        <button type="submit"><i class="fa fa-search"></i></button>
+      </form>
+    </div>
+  </div>
 
-<form action="/action_page.php">
-  <label for="cars">Категория:</label>
-  <select name="cars" id="cars">
-    <option value=очищение">Очищение</option>
-    <option value="тонизирование">Тонизирование</option>
-    <option value="увлажнение и питание">Увлажнение и питание</option>
-    <option value="защита от солнца">Защита от солнца</option>
-  </select>
-  <br><br>
-  <span style='font-size:30px;'>&#8595;</span>
+
+  <button class="openBtn" onclick="openSearch()">Поиск </button>
+  <input type="text" onkeypress="myFunction()">
+  <!-- Buttons -->
   <br>
-  <br>
-  <input type="submit" value="Выбрать">
-</form>
-
 <br>
-<section>
-<div class="responsive">
-  <div class="gallery">
-    <a target="_blank" href="защита.png">
-      <img src="images/защита.png" alt="" width="600" height="400">
-    </a>
-    <div class="desc">Защита от солнца</div>
+<div class="dropdown">
+  <button class="dropbtn">Этапы ухода</button>
+  <div class="dropdown-content">
+    <a href="#">Очищение</a>
+    <a href="#">Тонизирование</a>
+    <a href="#">Увлажнение и питание</a>
+      <a href="#">Защита от солнца</a>
   </div>
 </div>
 
-<div class="responsive">
-  <div class="gallery">
-    <a target="_blank" href="tone.jpg">
-      <img src="images/tone.jpg" alt="" width="600" height="400">
-    </a>
-    <div class="desc">Тонизирование</div>
-  </div>
-</div>
 
-<div class="responsive">
-  <div class="gallery">
-    <a target="_blank" href="очищение.jpg">
-      <img src="images/очищение.jpg" alt="" width="600" height="400">
-    </a>
-    <div class="desc">Очищение</div>
-  </div>
-</div>
+    <!-- Images -->
 
-<div class="responsive">
-  <div class="gallery">
-    <a target="_blank" href="увлажнение.jpeg">
-      <img src="images/увлажнение.jpeg" alt="Mountains" width="600" height="400">
-    </a>
-    <div class="desc">Увлажнение</div>
-  </div>
+    <section id="items">
+      <div class="row row-cols-lg-4 row-cols-md-3 row-cols-sm-2">
+        <div class="col">
+          <div class="card" style="width: 18rem;">
+            <img src="images/очищение.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <p>Очищение</p>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card" style="width: 18rem;">
 
-</div>
+            <img src="images/тонизирование.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <p>Тонизирование</p>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card" style="width: 18rem;">
 
-<div class="clearfix"></div>
+            <img src="images/увлажнение.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+            <p>Увлажнение</p>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card" style="width: 18rem;">
+            <img src="images/защита.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+            <p>Защита от солнца</p>
+            </div>
+          </div>
+        </div>
+      </div>
 
-<div style="padding:6px;">
+
+
+  <h2>Хиты продаж</h2>
+
+   <div class="row row-cols-lg-4 row-cols-md-3 row-cols-sm-2">
+  <div class="col">
+          <div class="card" style="width: 18rem;">
+            <img src="images/ординари.jpg" class="card-img-top" alt="Babor Cleansing Foam">
+            <div class="card-body">
+              <h5 class="card-title"><strong>The Ordinary</strong> </h5>
+              <p class="card-text">Кислотный пилинг The Ordinary AHA 30% + BHA 2%  <br /> <span style="color:#9977A6;font-weight:bold">14 940 ₸</span></p>
+            <button type="button" class="btn btn-dark btn-block">Купить</button>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card" style="width: 18rem;">
+            <img src="images/доктор.jpg" class="card-img-top" alt="Babor Cleansing Foam">
+            <div class="card-body">
+              <h5 class="card-title"><strong>Dr Jart</strong> </h5>
+              <p class="card-text">Dermaclear пенка для умывания глубокого очищения Dr.Jart+ <br /> <span style="color:#9977A6;font-weight:bold">12 500 ₸</span></p>
+            <button type="button" class="btn btn-dark btn-block">Купить</button>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card" style="width: 18rem;">
+            <img src="images/биор.jpg" class="card-img-top" alt="Babor Cleansing Foam">
+            <div class="card-body">
+              <h5 class="card-title"><strong>Biore</strong> </h5>
+              <p class="card-text">Biore Uv1 Count Aqua Rich Watery Essence Spf50pa <br /> <span style="color:#9977A6;font-weight:bold">11 000 ₸</span></p>
+              <button type="button" class="btn btn-dark btn-block">Купить</button>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card" style="width: 18rem;">
+            <img src="images/к а.jpg" class="card-img-top" alt="Babor Cleansing Foam">
+            <div class="card-body">
+              <h5 class="card-title"><strong>Q+A</strong> </h5>
+              <p class="card-text">Увлажняющий крем для лица Q+A Zinc PCA Daily Moisturiser <br /> <span style="color:#9977A6;font-weight:bold">8 940 ₸</span></p>
+            <button type="button" class="btn btn-dark btn-block">Купить</button>
+            </div>
+          </div>
+        </div>
+      </div>
 </section>
-<hr>
-<div class="end">
-  <br>
-<em><ins><b>Компания</b></ins></em>
 
-<p>O Hac</p>
-<p>Политика конфиденциальности</p>
-<p>Вакансии</p>
-<p>Часто задаваемые вопросы</p›
 
-</div>
-  <h4><del>No wrinkles and pimples!</del></h4>
+
+
+
+
+  <!-- Footer -->
+  <footer>
+    <div class="footer">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm">
+            Покупателям
+
+            <ul>
+
+              <li>Доставка и оплата</li>
+              <li>Адреса магазинов</li>
+              <li>Дисконтный клуб</li>
+
+
+            </ul>
+          </div>
+          <div class="col-sm">
+            Контакты
+            <ul>
+
+              <li>880-880</li>
+              <li>+7(701)000-00-00</li>
+              <li>lavie@gmail.com</li>
+
+
+            </ul>
+          </div>
+          <div class="col-sm">
+            Информация
+            <ul>
+
+
+              <li>Бренды</li>
+              <li>Полезная информация</li>
+              <li>FAQ</li>
+              <a href="#" class="fa fa-instagram"></a>
+            <a href="#" class="fa fa-twitter"></a>
+            <a href="#" class="fa fa-google"></a>
+            <a href="#" class="fa fa-facebook"></a>
+
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <div class="container-responsive">
+
+      <h3> &copy 2022 La Vie </h3>
+  </footer>
+  </div>
+
+
+
+<script src="index.js" charset="utf-8"></script>
 </body>
+
 </html>
